@@ -20,17 +20,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile Road_Straight90
       objectReference: {fileID: 0}
+    - target: {fileID: 5827838726086831396, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309418770720256007, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_text
+      value: 8 , 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309418770720256007, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309418770720256007, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309418770720256007, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309418770720256007, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286611584
+      objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 62.38592
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 186.06563
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -32.98378
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38,15 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8235784318450807046, guid: 64a40d55343c57f4abe8e42c7105bfd8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -34,15 +34,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 52.385925
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 186.06563
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -12.98378
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50,15 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5594695890015444091, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -72,9 +72,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6530076333560634746, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_text
+      value: 7 , 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530076333560634746, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530076333560634746, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530076333560634746, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530076333560634746, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286611584
+      objectReference: {fileID: 0}
     - target: {fileID: 8002786618649919577, guid: b74222ce28000a743bf628a536403bdc, type: 3}
       propertyPath: m_Name
       value: Tile Road_Corner270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002786618649919577, guid: b74222ce28000a743bf628a536403bdc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ballista
+  - Path
   layers:
   - Default
   - TransparentFX

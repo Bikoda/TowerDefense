@@ -20,6 +20,7 @@ public class CoordinateLabler : MonoBehaviour
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
         CoordinatesNaming();
+        label.enabled = false;
     }
 
     void Update()
@@ -38,16 +39,9 @@ public class CoordinateLabler : MonoBehaviour
     {
         
         if (Input.GetKeyDown(KeyCode.C))
-        {
-            if (label.enabled)
-            {
-                Debug.Log("You just disabled the labels");
-                label.enabled = !label.IsActive();
-            } else
-            {
-                Debug.Log("Yo0u just enabled the labels");
-                label.enabled = true;
-            }          
+        {         
+          Debug.Log("You just disabled the labels");
+          label.enabled = !label.IsActive();                  
         }
     }   
 

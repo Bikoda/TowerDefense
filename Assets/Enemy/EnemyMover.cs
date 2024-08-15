@@ -9,8 +9,22 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] List <Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0f, 5f)] float travelSpeed = 1f;
     GameObject[] pathToFollow;
+    private int lives = 2;
+    Enemy enemy;
 
-    void Start()
+    void Awake()
+    {
+        enemy = FindAnyObjectByType<Enemy>();
+    }
+
+    void Update()
+    {
+        if (lives <= 0)
+        {
+            Debug.Log("Game Over");
+        }    
+    }
+    void OnEnable()
     {
         
         FindPathTag();
@@ -42,7 +56,7 @@ public class EnemyMover : MonoBehaviour
     }
     IEnumerator FollowPath()
     {
-        
+
         foreach (Waypoint waypoint in path)
         {
             Vector3 currentLoationPoint = transform.position;
@@ -62,7 +76,14 @@ public class EnemyMover : MonoBehaviour
 
         }
 
-        Destroy(gameObject);
+        
+        EnemyDamange();
     }
 
+    private void EnemyDamange()
+    {
+        gameObject.SetActive(false);
+        enemy.GoldStolen();
+        Debug.Log($"You just lost a live! you have {lives} lives left!");
+    }
 }

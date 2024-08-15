@@ -7,14 +7,14 @@ public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform weapon;
     [SerializeField] Transform target;
-    [SerializeField] float towerRange = 25;
+    private float towerRange = 25;
     [SerializeField] ParticleSystem projectileParticles;
 
     // Update is called once per frame
     void Update()
     {
         FindClosestTarget();
-        AimWeapon(); 
+        AimWeapon();
     }
 
     void FindClosestTarget()
@@ -34,7 +34,6 @@ public class TargetLocator : MonoBehaviour
                 MaxDistance = TargetDistance;
             }
         }
-
         target = closestTarget;
     }
 
@@ -42,28 +41,27 @@ public class TargetLocator : MonoBehaviour
     {
         if (target != null)
         {
-            float targetDistance = Vector3.Distance (transform.position, target.position);
-            if ( targetDistance <= towerRange)
+            float targetDistance = Vector3.Distance(transform.position, target.position);
+            if (targetDistance <= towerRange)
             {
                 weapon.LookAt(target);
                 Attack(true);
-            } else
+            }
+            else
             {
                 Attack(false);
                 transform.rotation = Quaternion.identity;
             }
-            
-           
-        } else
+        }
+        else
         {
             Attack(false);
-            transform.rotation = Quaternion.identity;
         }
     }
 
     void Attack(bool isActive)
     {
-        isActive = projectileParticles.emission.enabled;
-
+        var emission = projectileParticles.emission;
+        emission.enabled = isActive;
     }
 }

@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-
+[RequireComponent (typeof (Enemy))]
 public class EnemyMover : MonoBehaviour
 {
-    [SerializeField] List <Waypoint> path = new List<Waypoint>();
-    [SerializeField] [Range(0f, 5f)] float travelSpeed = 1f;
+    [SerializeField] List<Waypoint> path = new List<Waypoint>();
+    [SerializeField][Range(0f, 5f)] float travelSpeed = 1f;
     GameObject[] pathToFollow;
-    private int lives = 2;
     Enemy enemy;
 
     void Awake()
@@ -19,18 +18,13 @@ public class EnemyMover : MonoBehaviour
 
     void Update()
     {
-        if (lives <= 0)
-        {
-            Debug.Log("Game Over");
-        }    
+        
     }
     void OnEnable()
     {
-        
         FindPathTag();
         ReturnToStart();
         StartCoroutine(FollowPath());
-        
     }
 
     void FindPathTag()
@@ -38,15 +32,13 @@ public class EnemyMover : MonoBehaviour
         path.Clear();
         GameObject waypointPathParent = GameObject.FindGameObjectWithTag("Path");
 
-        foreach (Transform child in waypointPathParent.transform) 
+        foreach (Transform child in waypointPathParent.transform)
         {
-            //insert waypoint in path.
             Waypoint waypoint = child.GetComponent<Waypoint>();
             if (waypoint != null)
             {
                 path.Add(child.GetComponent<Waypoint>());
             }
-            
         }
     }
 
@@ -56,7 +48,6 @@ public class EnemyMover : MonoBehaviour
     }
     IEnumerator FollowPath()
     {
-
         foreach (Waypoint waypoint in path)
         {
             Vector3 currentLoationPoint = transform.position;
@@ -75,8 +66,6 @@ public class EnemyMover : MonoBehaviour
             }
 
         }
-
-        
         EnemyDamange();
     }
 
@@ -84,6 +73,5 @@ public class EnemyMover : MonoBehaviour
     {
         gameObject.SetActive(false);
         enemy.GoldStolen();
-        Debug.Log($"You just lost a live! you have {lives} lives left!");
     }
 }

@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int enemyMaxHealth = 5;
-    [SerializeField] int enemyCurrentHealth = 0;
+    [Tooltip("adds ammount of hitpoints when enemy dies")]
+    [SerializeField] int gameDificultyRamp = 1;
+    int enemyCurrentHealth = 0;
     private bool enemySlain = false;
     Enemy enemy;
     void OnEnable()
@@ -25,7 +28,6 @@ public class EnemyHealth : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-
         processHit();
         Debug.Log("you have hit something");
     }
@@ -48,7 +50,7 @@ public class EnemyHealth : MonoBehaviour
             gameObject.SetActive(false);
             enemySlain = true;
             enemy.GoldReward();
-           
+            enemyMaxHealth += gameDificultyRamp;
         }
     }
 }

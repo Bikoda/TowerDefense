@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    
+
     [SerializeField] GameObject enemy;
-    //private int[] wave = { 10,15,30 };
-    [SerializeField] int poolSize = 5;
+    [SerializeField] [Range(1f, 50f)] int poolSize = 5;
+    [SerializeField] [Range(0.1f, 30f)] float spawnTimer = 1f;
     private GameObject[] pool;
     void Awake()
     {
@@ -18,7 +18,7 @@ public class ObjectPool : MonoBehaviour
     private void PopulateObjectPool()
     {
         pool = new GameObject[poolSize];
-        for (int i = 0; i < pool.Length; i++) 
+        for (int i = 0; i < pool.Length; i++)
         {
             pool[i] = Instantiate(enemy, transform);
             pool[i].SetActive(false);
@@ -31,16 +31,13 @@ public class ObjectPool : MonoBehaviour
         StartCoroutine(EnemySpawn());
     }
 
-
-
-
     IEnumerator EnemySpawn()
     {
         while (true)
         {
             Debug.Log("Enemy spawning now");
             EnableObjectsInPool();
-            yield return new WaitForSecondsRealtime(1);
+            yield return new WaitForSecondsRealtime(spawnTimer);
         }
     }
 
@@ -53,7 +50,6 @@ public class ObjectPool : MonoBehaviour
                 pool[i].SetActive(true);
                 return;
             }
-            
         }
     }
 }

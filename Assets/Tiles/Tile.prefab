@@ -131,8 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaceable: 1
-  ballista: {fileID: 3049131714819384361, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
-  gameEchonomy: {fileID: 0}
+  ballista: {fileID: 6851728849130502175, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
 --- !u!65 &3089823219777357972
 BoxCollider:
   m_ObjectHideFlags: 0

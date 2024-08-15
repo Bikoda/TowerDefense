@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Ballista
   - Path
+  - Gold
+  - Canvas
   layers:
   - Default
   - TransparentFX

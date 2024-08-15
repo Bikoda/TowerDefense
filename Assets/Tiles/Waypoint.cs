@@ -5,20 +5,16 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     [SerializeField] bool isPlaceable;
-    [SerializeField] Transform ballista;
+    [SerializeField] Turret ballista;
 
     Turret turret;
 
-    public bool IsPlaceable { get { return isPlaceable; }}
+    public bool IsPlaceable { get { return isPlaceable; } }
     void Start()
     {
         turret = FindAnyObjectByType<Turret>();
     }
 
-    void Update()
-    {
-        
-    }
     void OnMouseDown()
     {
         PlaceTurret();
@@ -29,13 +25,8 @@ public class Waypoint : MonoBehaviour
     {
         if (isPlaceable)
         {
-            
-            Instantiate(ballista, transform.position, Quaternion.identity);
-            turret.GoldPayment();
-            isPlaceable = false;
-            
+            bool isPlaced = turret.CreateTower(ballista, transform.position);
+            isPlaceable = !isPlaced;
         }
     }
-
-
 }

@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    [SerializeField] int goldPayenemt = 75;
+   private int goldPayment = 75;
     Bank bank;
-    // Start is called before the first frame update
-    void Start()
-    {
-        bank = FindAnyObjectByType<Bank>();
-    }
+
     public void GoldPayment()
     {
-        if (bank == null) { return; }
-        bank.Withdraw(goldPayenemt);
+        bank.Withdraw(goldPayment);
+    }
+
+    public bool CreateTower(Turret turret, Vector3 position)
+    {
+        bank = FindAnyObjectByType<Bank>();
+        if (bank == null)
+        {
+            return false;
+        }
+        if (bank.CurrentBalance > goldPayment)
+        {
+            Instantiate(turret, position, Quaternion.identity);
+            bank.Withdraw(goldPayment);
+            return true;
+        }
+        return false;
     }
 }

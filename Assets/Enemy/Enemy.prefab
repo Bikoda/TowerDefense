@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3208299882406096083}
-  - component: {fileID: 647908019484595977}
-  - component: {fileID: 7522445162767169728}
   - component: {fileID: 8001433054717084591}
-  - component: {fileID: -497892459228012706}
+  - component: {fileID: 7299773572808128339}
+  - component: {fileID: 3019247841545839484}
+  - component: {fileID: 9011498591408457543}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -36,86 +36,6 @@ Transform:
   - {fileID: 2626159801985738094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &647908019484595977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6354271542264986221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b3519cb0b61eb44a34c31a65e65d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  travelSpeed: 1.29
---- !u!114 &7522445162767169728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6354271542264986221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee84f2334f9f4d4598255644ef9dc2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyMaxHealth: 5
-  enemyCurrentHealth: 0
 --- !u!65 &8001433054717084591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +57,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.4233527, y: 4.465132, z: 5.025622}
   m_Center: {x: -0.035188437, y: 2.2439525, z: 0.051641226}
---- !u!114 &-497892459228012706
+--- !u!114 &7299773572808128339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,6 +69,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c25b4cfe02caf0c4ca0dcb01f05ba94e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldPayenemt: 50
+  goldPenalty: 250
+--- !u!114 &3019247841545839484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6354271542264986221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b3519cb0b61eb44a34c31a65e65d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: []
+  travelSpeed: 1
+--- !u!114 &9011498591408457543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6354271542264986221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee84f2334f9f4d4598255644ef9dc2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMaxHealth: 5
+  gameDificultyRamp: 1
 --- !u!1001 &7694918991955597205
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,13 +10,12 @@ public class Bank : MonoBehaviour
     TextMeshPro textMeshPro;
     private int startingBalance = 151;
     private int currentBalance;
-    private GameObject gold;
+    [SerializeField] GameObject gold;
     private int pachinko = 0;
     public int CurrentBalance { get { return currentBalance; } }
     void Awake()
     {
         textMeshPro = GetComponent<TextMeshPro>();
-        gold = GameObject.FindGameObjectWithTag("Gold");
         
 
         currentBalance = startingBalance;

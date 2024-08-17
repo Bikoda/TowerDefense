@@ -10,7 +10,6 @@ public class TargetLocator : MonoBehaviour
     private float towerRange = 25;
     [SerializeField] ParticleSystem projectileParticles;
 
-    // Update is called once per frame
     void Update()
     {
         FindClosestTarget();

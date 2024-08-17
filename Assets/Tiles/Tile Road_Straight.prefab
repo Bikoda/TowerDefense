@@ -95,9 +95,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile Road_Straight
       objectReference: {fileID: 0}
+    - target: {fileID: 3140930463938219898, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
+      propertyPath: m_text
+      value: 5 , 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140930463938219898, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140930463938219898, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140930463938219898, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140930463938219898, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286611584
+      objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 32.385925
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -105,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 17.01622
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -113,15 +133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4372419142731026043, guid: adfa4fbcecf7e4d42971277dd91dc4c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

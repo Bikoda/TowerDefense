@@ -13,13 +13,9 @@ public class EnemyMover : MonoBehaviour
 
     void Awake()
     {
-        enemy = FindAnyObjectByType<Enemy>();
+        enemy = FindAnyObjectByType<Enemy>();      
     }
 
-    void Update()
-    {
-        
-    }
     void OnEnable()
     {
         FindPathTag();
@@ -62,7 +58,7 @@ public class EnemyMover : MonoBehaviour
                 Vector3 waypointLocationLERP = Vector3.Lerp(currentLoationPoint, waypointLocation, travelPercentage);
                 //Debug.Log($"Moving to: {waypoint.name}");
                 transform.position = waypointLocationLERP;
-                yield return new WaitForEndOfFrame();
+                yield return new WaitForSeconds(1);
             }
 
         }
@@ -71,6 +67,7 @@ public class EnemyMover : MonoBehaviour
 
     private void EnemyDamange()
     {
+        
         gameObject.SetActive(false);
         enemy.GoldStolen();
     }

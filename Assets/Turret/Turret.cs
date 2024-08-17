@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Turret))]
 public class Turret : MonoBehaviour
 {
    private int goldPayment = 75;
